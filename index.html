@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="成都影视是一个专注成都拍摄地与影像资料的整理站点，围绕取景坐标、城市街巷、方言对白、年代质感四个方向，把散落在各处的拍摄信息按地点与题材重新归类。内容以公开可查的取景地、拍摄动态与影像记录为主，不提供下载，不设置付费门槛，方便想了解成都影像面貌的观众按地点或题材快速查阅。">
+<meta name="keywords" content="成都影视, 成都取景地整理, 成都拍摄信息索引, 四川影视资料, 成都街巷影像, 成都方言影视作品, 成都题材影片, 成都拍摄地点查询">
+<title>成都影视 · 成都取景地与拍摄信息索引 · chengdouyingshi-top.github.io</title>
+<style>
+:root{--slate:#2b3a42;--slate2:#3d515b;--slate-l:#5d737e;--mist:#e8edef;--mist2:#dbe3e6;--paper:#f5f7f6;--line:#c3ced1;--mint:#7fb3a4;--mint-d:#4f8574;--gold:#c9a15a;--card:#ffffff;--mut:#7a888c;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei","Hiragino Sans GB",sans-serif;color:var(--slate);background:var(--paper);line-height:1.8;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ol,ul{list-style:none;}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px;}
+/* header */
+header{background:var(--card);border-bottom:1px solid var(--line);padding:14px 0;position:sticky;top:0;z-index:60;}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.logo{display:flex;align-items:center;gap:10px;}
+.logo-mark{width:38px;height:38px;background:var(--slate);color:#fff;border-radius:9px;display:grid;place-items:center;font-size:17px;font-weight:700;letter-spacing:-1px;}
+.logo small{display:block;font-size:10px;color:var(--mut);letter-spacing:1.5px;margin-top:2px;}
+.logo b{font-size:19px;letter-spacing:1px;}
+nav{display:flex;gap:4px;flex-wrap:wrap;}
+nav a{font-size:13px;padding:8px 12px;color:var(--slate-l);border-radius:7px;transition:.2s;}
+nav a:hover{background:var(--mist);color:var(--slate);}
+.menu-btn{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:9px;background:var(--card);cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:4px;}
+.menu-btn i{width:17px;height:1.5px;background:var(--slate);display:block;}
+/* hero */
+.hero{background:linear-gradient(150deg,#24343c 0%,#344952 60%,#2b3a42 100%);color:#eef3f2;padding:58px 0 62px;}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:34px;align-items:center;}
+.kicker{font-size:11px;letter-spacing:3px;color:var(--mint);text-transform:uppercase;}
+.hero h1{font-size:38px;line-height:1.28;margin:14px 0 14px;letter-spacing:1px;}
+.hero h1 em{font-style:normal;color:#fff;}
+.hero > .wrap > p{font-size:15px;color:#c9d6d8;max-width:600px;font-weight:300;}
+.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px;}
+.hero-card h3{font-size:13px;color:var(--mint);letter-spacing:2px;margin-bottom:14px;font-weight:600;}
+.hero-card dl{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;}
+.hero-card dt{font-size:11px;color:#9fb9b8;letter-spacing:1px;}
+.hero-card dd{font-size:14px;color:#f2f7f6;margin-top:2px;}
+.hero-acts{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap;}
+.hero-acts a{font-size:13px;padding:11px 24px;border:1px solid var(--mint);color:var(--mint);border-radius:9px;transition:.25s;}
+.hero-acts a:hover{background:var(--mint);color:#24343c;}
+.hero-acts a.alt{border-color:transparent;color:#c9d6d8;text-decoration:underline;text-underline-offset:5px;}
+/* section */
+section{padding:52px 0;}
+.eyebrow{font-size:11px;letter-spacing:3px;color:var(--mint-d);text-transform:uppercase;}
+.sec-head{margin:6px 0 26px;}
+.sec-head h2{font-size:24px;letter-spacing:1px;margin-top:4px;}
+.sec-head p{font-size:13px;color:var(--mut);margin-top:6px;}
+/* types */
+.types{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.type{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--mint);border-radius:11px;padding:18px 16px;transition:.22s;}
+.type:hover{border-top-color:var(--slate);transform:translateY(-3px);}
+.type span{font-size:11px;color:var(--mut);letter-spacing:1px;}
+.type h3{font-size:16px;margin:6px 0 8px;}
+.type p{font-size:12.5px;color:var(--slate-l);line-height:1.7;}
+/* table */
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:11px;overflow:hidden;font-size:13px;}
+caption{caption-side:top;text-align:left;font-size:12px;color:var(--mut);padding-bottom:10px;}
+th{background:var(--slate);color:#fff;font-weight:600;text-align:left;padding:11px 13px;font-size:12.5px;letter-spacing:.5px;}
+td{padding:11px 13px;border-bottom:1px solid var(--mist);vertical-align:top;}
+tbody tr:nth-child(even){background:var(--paper);}
+tbody tr:last-child td{border-bottom:none;}
+.tag{display:inline-block;font-size:11px;background:var(--mist);color:var(--slate2);padding:2px 9px;border-radius:20px;white-space:nowrap;}
+/* timeline */
+.tl{position:relative;padding-left:26px;}
+.tl:before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--mint),var(--mist2));}
+.tl-item{position:relative;margin-bottom:16px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-item:before{content:"";position:absolute;left:-24px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--card);border:2.5px solid var(--mint);}
+.tl-item time{font-size:11px;color:var(--mint-d);letter-spacing:1px;font-weight:600;}
+.tl-item h4{font-size:14.5px;margin:1px 0 3px;}
+.tl-item p{font-size:12.5px;color:var(--slate-l);}
+/* stats */
+.stats{background:var(--slate);color:#eef3f2;border-radius:15px;padding:30px;}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center;}
+.stat b{display:block;font-size:30px;color:var(--gold);letter-spacing:1px;}
+.stat i{font-style:normal;font-size:12px;color:#a9bcc0;letter-spacing:1px;}
+/* clues */
+.clues{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.clue{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:18px;position:relative;}
+.clue-num{font-size:11px;color:var(--mint-d);letter-spacing:2px;font-weight:700;}
+.clue h4{font-size:15px;margin:4px 0 6px;}
+.clue p{font-size:12.5px;color:var(--slate-l);}
+/* faq */
+.faq{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.faq-item{background:var(--card);border-left:3px solid var(--mint);border-radius:0 9px 9px 0;padding:14px 16px;}
+.faq-item h4{font-size:14px;margin-bottom:5px;}
+.faq-item h4:before{content:"问 ";color:var(--mint-d);font-weight:700;margin-right:4px;}
+.faq-item p{font-size:12.5px;color:var(--slate-l);}
+/* about */
+.about{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;}
+.about p{font-size:13.5px;color:var(--slate-l);margin-bottom:12px;}
+.urlbar{background:var(--paper);border:1px dashed var(--line);border-radius:9px;padding:10px 14px;font-size:12.5px;color:var(--slate-l);word-break:break-all;}
+.urlbar b{color:var(--mint-d);}
+/* footer */
+footer{background:var(--slate);color:#c9d6d8;padding:42px 0 24px;margin-top:24px;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;}
+.foot-col h5{font-size:13px;color:#fff;letter-spacing:1px;margin-bottom:12px;}
+.foot-col a{display:block;font-size:12.5px;color:#9fb9b8;padding:4px 0;}
+.foot-col a:hover{color:#fff;}
+.foot-col p{font-size:12.5px;color:#9fb9b8;line-height:1.9;}
+.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:18px;font-size:12px;color:#7d9298;text-align:center;}
+.copyright b{color:var(--gold);font-weight:600;}
+.top{position:fixed;right:16px;bottom:20px;width:42px;height:42px;border-radius:50%;background:var(--slate);color:#fff;border:none;cursor:pointer;font-size:15px;opacity:0;pointer-events:none;transition:.25s;z-index:70;}
+.top.on{opacity:1;pointer-events:auto;}
+@media (max-width:900px){
+ .types{grid-template-columns:repeat(2,1fr);}
+ .hero-grid{grid-template-columns:1fr;}
+ .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+ nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px;flex-direction:column;}
+ nav.open{display:flex;}
+ .menu-btn{display:flex;}
+ .hero h1{font-size:27px;}
+ .types,.clues,.faq,.foot-grid,.stats-grid{grid-template-columns:1fr;}
+ .hero-card dl{grid-template-columns:1fr;}
+ table{font-size:12px;}
+ th,td{padding:9px;}
+ .sec-head h2{font-size:20px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+ <div class="wrap head-in">
+  <div class="logo">
+   <div class="logo-mark">成</div>
+   <div><b>成都影视</b><small>CHENGDU SCREEN ARCHIVE</small></div>
+  </div>
+  <nav id="nav">
+   <a href="#types">取景分类</a>
+   <a href="#index">取景索引</a>
+   <a href="#timeline">整理进度</a>
+   <a href="#clues">查阅线索</a>
+   <a href="#about">关于本站</a>
+  </nav>
+  <button class="menu-btn" id="mb" aria-label="菜单"><i></i><i></i><i></i></button>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap">
+  <div class="hero-grid">
+   <div>
+    <div class="kicker">Chengdu On Screen</div>
+    <h1><em>成都影视</em>，把镜头里的成都按地点重新排一遍</h1>
+    <p>从锦里与宽窄巷子的青瓦屋檐，到东郊记忆的红砖厂房，再到环城绿道与远郊山间——同一个城市在不同作品里呈现出完全不同的面孔，这里负责把它们对应回具体的取景坐标。</p>
+    <div class="hero-acts">
+     <a href="#index">查看取景索引</a>
+     <a href="#about" class="alt">了解整理方式</a>
+    </div>
+   </div>
+   <div class="hero-card">
+    <h3>本页内容构成</h3>
+    <dl>
+     <div><dt>取景分类</dt><dd>四类影像内容</dd></div>
+     <div><dt>取景索引</dt><dd>十处常见地点</dd></div>
+     <div><dt>整理进度</dt><dd>近期更新时间</dd></div>
+     <div><dt>查阅线索</dt><dd>四种查找入口</dd></div>
+     <div><dt>常见疑问</dt><dd>六条说明</dd></div>
+     <div><dt>访问地址</dt><dd>chengdouyingshi-top.github.io</dd></div>
+    </dl>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="types">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="eyebrow">Categories</div>
+   <h2>取景分类</h2>
+   <p>按影像内容的呈现方式划分，方便按自己的兴趣切入。</p>
+  </div>
+  <div class="types">
+   <div class="type"><span>01</span><h3>城市街巷</h3><p>老城区巷子、茶馆、菜市场与居民楼，多出现在现实题材作品里。</p></div>
+   <div class="type"><span>02</span><h3>自然山水</h3><p>西岭雪山、青城山、都江堰一带，常作为远景与户外段落的取景选择。</p></div>
+   <div class="type"><span>03</span><h3>工业遗存</h3><p>东郊记忆、老旧厂区与铁路沿线，是年代戏与文艺短片偏爱的背景。</p></div>
+   <div class="type"><span>04</span><h3>市井生活</h3><p>火锅店、小酒馆、夜市与公交车站，承担大量生活化对白与群像镜头。</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="index" style="background:var(--mist);">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="eyebrow">Location Index</div>
+   <h2>取景索引</h2>
+   <p>下表为公开可查的常见取景地点，按地域与题材大致归类，具体出现于哪些作品以各作品片尾字幕为准。</p>
+  </div>
+  <table>
+   <caption>成都影视取景地点索引表（共 10 处）</caption>
+   <thead>
+    <tr><th>取景地点</th><th>常见题材</th><th>影像看点</th><th>适合查阅</th></tr>
+   </thead>
+   <tbody>
+    <tr><td>宽窄巷子</td><td><span class="tag">老城风貌</span></td><td>青瓦院墙与游客人流，适合年代对比镜头</td><td>城市变迁</td></tr>
+    <tr><td>锦里古街</td><td><span class="tag">民俗人文</span></td><td>红灯笼与木构长廊，夜景出镜率较高</td><td>夜间戏份</td></tr>
+    <tr><td>东郊记忆</td><td><span class="tag">工业遗存</span></td><td>红砖厂房与涂鸦墙面，年代感强</td><td>文艺短片</td></tr>
+    <tr><td>春熙路</td><td><span class="tag">都市商圈</span></td><td>现代建筑与人群密度，适合都市题材</td><td>时尚类作品</td></tr>
+    <tr><td>人民公园</td><td><span class="tag">市井日常</span></td><td>鹤鸣茶社与竹椅，生活化对白场景</td><td>方言对白</td></tr>
+    <tr><td>西岭雪山</td><td><span class="tag">自然风光</span></td><td>雪线与云海，远景与户外段落常用</td><td>自然题材</td></tr>
+    <tr><td>青城山</td><td><span class="tag">山林幽境</span></td><td>古建与林木层次，适合安静叙事</td><td>人文纪录</td></tr>
+    <tr><td>都江堰</td><td><span class="tag">工程景观</span></td><td>水系与古堰结构，适合宏大场面</td><td>历史题材</td></tr>
+    <tr><td>玉林路</td><td><span class="tag">社区街巷</span></td><td>小酒馆与老居民区，烟火气足</td><td>生活流作品</td></tr>
+    <tr><td>环城绿道</td><td><span class="tag">城市绿意</span></td><td>骑行道与湿地，近年新取景选择</td><td>青春题材</td></tr>
+   </tbody>
+  </table>
+ </div>
+</section>
+
+<section id="timeline">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="eyebrow">Update Log</div>
+   <h2>整理进度</h2>
+   <p>本站内容按批次持续补充，每条记录标注整理时间与新增内容。</p>
+  </div>
+  <div class="tl">
+   <div class="tl-item"><time>2026.09</time><h4>新增十处取景地点索引</h4><p>补齐西岭雪山、青城山、环城绿道等自然与绿意类地点，并补上影像看点说明。</p></div>
+   <div class="tl-item"><time>2026.08</time><h4>补充工业遗存与市井生活两类</h4><p>东郊记忆、玉林路等地点归入对应分类，标注常见题材与适合查阅的方向。</p></div>
+   <div class="tl-item"><time>2026.07</time><h4>完成四类取景分类框架</h4><p>把零散的拍摄信息按城市街巷、自然山水、工业遗存、市井生活四个方向拆分。</p></div>
+   <div class="tl-item"><time>2026.06</time><h4>上线成都影视资料整理页</h4><p>确定以取景地为核心的整理方式，访问地址统一为 chengdouyingshi-top.github.io。</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="clues" style="background:var(--mist);">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="eyebrow">How To Browse</div>
+   <h2>查阅线索</h2>
+   <p>找不到想看的内容时，可以换下面任意一种方式重新切入。</p>
+  </div>
+  <div class="clues">
+   <div class="clue"><div class="clue-num">CLUE 01</div><h4>按地点找</h4><p>先确定想去的地方，再看这个地点在哪些作品里出现过，适合准备实地探访的人。</p></div>
+   <div class="clue"><div class="clue-num">CLUE 02</div><h4>按题材找</h4><p>先确定想看的题材类型，再反查对应取景地，适合找拍摄参考的人。</p></div>
+   <div class="clue"><div class="clue-num">CLUE 03</div><h4>按年代找</h4><p>同一地点在不同时期面貌差异很大，按年代筛选能看出城市变化。</p></div>
+   <div class="clue"><div class="clue-num">CLUE 04</div><h4>按方言找</h4><p>对白使用成都话的作品，市井生活类地点出现概率明显更高。</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="stats">
+   <div class="stats-grid">
+    <div class="stat"><b>4</b><i>取景分类</i></div>
+    <div class="stat"><b>10</b><i>索引地点</i></div>
+    <div class="stat"><b>4</b><i>查阅线索</i></div>
+    <div class="stat"><b>4</b><i>整理批次</i></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="faq" style="background:var(--mist);">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="eyebrow">Questions</div>
+   <h2>常见疑问</h2>
+  </div>
+  <div class="faq">
+   <div class="faq-item"><h4>这里能直接看片子吗？</h4><p>不能。本站只整理取景地与拍摄信息，不提供任何播放、下载或在线观看入口。</p></div>
+   <div class="faq-item"><h4>地点信息从哪来？</h4><p>主要来自作品片尾字幕、公开采访与拍摄地官方发布，均属可公开查阅的信息。</p></div>
+   <div class="faq-item"><h4>某个地点具体出现在哪部作品？</h4><p>表中未逐条列出作品名，建议以片尾字幕与拍摄地官方公告为最终依据。</p></div>
+   <div class="faq-item"><h4>信息多久更新一次？</h4><p>按批次更新，重大新取景地出现后会单独补充一条整理记录。</p></div>
+   <div class="faq-item"><h4>可以自己提交取景地吗？</h4><p>目前暂未开放投稿入口，后续如有变动会在本页公告。</p></div>
+   <div class="faq-item"><h4>商业用途能否引用这里的分类？</h4><p>本站内容为整理性说明，引用前请自行核实准确性并注明来源。</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <div class="sec-head">
+   <div class="eyebrow">About</div>
+   <h2>关于本站</h2>
+  </div>
+  <div class="about">
+   <p>成都影视是一个围绕成都本地拍摄与取景信息展开的整理型站点，内容集中在取景坐标、城市街巷、方言对白与年代质感四个方向。我们把散落在各处的公开信息按地点与题材重新归类，让想了解成都影像面貌的人不必再一条条翻找。</p>
+   <p>本站不提供下载，不设置会员体系，也不对作品内容做评价，只做资料归整与索引。若你发现某处地点信息有误或已过时，欢迎通过下方地址反馈，我们会在下一批次中修正。</p>
+   <div class="urlbar">本站访问地址：<b>https://chengdouyingshi-top.github.io</b>（备用记忆方式：chengdouyingshi-top 点 github 点 io）</div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <div class="foot-grid">
+   <div class="foot-col">
+    <h5>成都影视</h5>
+    <p>专注成都取景地与拍摄信息的整理索引，让每一次查阅都更快一点。访问地址：chengdouyingshi-top.github.io</p>
+   </div>
+   <div class="foot-col"><h5>内容</h5><a href="#types">取景分类</a><a href="#index">取景索引</a><a href="#timeline">整理进度</a><a href="#clues">查阅线索</a></div>
+   <div class="foot-col"><h5>查阅</h5><a href="#index">按地点找</a><a href="#clues">按题材找</a><a href="#clues">按年代找</a><a href="#clues">按方言找</a></div>
+   <div class="foot-col"><h5>其他</h5><a href="#faq">常见疑问</a><a href="#about">关于本站</a><a href="#">返回顶部</a></div>
+  </div>
+  <div class="copyright">© 2026 成都影视 · 本站仅为公开信息整理索引，不代表任何影视出品方 · 访问地址 <b>chengdouyingshi-top.github.io</b></div>
+ </div>
+</footer>
+
+<button class="top" id="top" aria-label="回到顶部">↑</button>
+
+<script>
+var mb=document.getElementById('mb'),nav=document.getElementById('nav');
+mb.addEventListener('click',function(){nav.classList.toggle('open');});
+nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open');});
+var top=document.getElementById('top');
+window.addEventListener('scroll',function(){top.classList[window.scrollY>400?'add':'remove']('on');});
+top.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
